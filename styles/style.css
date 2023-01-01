@@ -3,7 +3,6 @@
   --primary-main-background: hsl(233, 47%, 7%);
   --primary-card-background: hsl(244, 38%, 16%);
   --primary-accent: hsl(277, 64%, 61%);
-  --primary-overlay: rgb(126, 41, 171);
   --neutral-main-heading: hsl(0, 0%, 100%);
   --neutral-main-para: hsla(0, 0%, 100%, 0.75);
   --neutral-stat-headings: hsla(0, 0%, 100%, 0.6);
@@ -45,11 +44,16 @@ main{
 
 .card__img{
   background-color: var(--primary-accent);
+  /* object-fit: fill; */
 }
 
 .card__img picture img{
   opacity: .8;
   mix-blend-mode: multiply;
+  object-fit: cover;
+  /* height: 100%; */
+  /* width: inherit;
+  height: inherit; */
 }
 
 .card__content{
@@ -94,7 +98,7 @@ main{
   color: var(--neutral-stat-headings);
 }
 
-@media (min-width:1493px){
+@media (min-width:900px){
   .card{
     display: flex;
     max-width: none;
