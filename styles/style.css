@@ -44,14 +44,12 @@ main{
 }
 
 .card__img{
-  position: relative;
+  background-color: var(--primary-accent);
 }
 
-.card__img-overlay{
-  position: absolute;
-  background-color: var(--primary-overlay);
-  opacity: .65;
-  inset: 0;
+.card__img picture img{
+  opacity: .8;
+  mix-blend-mode: multiply;
 }
 
 .card__content{
