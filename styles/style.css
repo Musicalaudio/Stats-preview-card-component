@@ -124,7 +124,6 @@ main{
   }
 
   .card__img img{
-    max-width: none;
     object-fit: cover;  
     height: 100%;
   }
