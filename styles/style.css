@@ -47,9 +47,6 @@ main{
 }
 
 .card__img img{
-  max-width: none;
-  object-fit: cover;  
-  height: 100%;
   mix-blend-mode: multiply;
   opacity: .8;
 }
@@ -96,7 +93,7 @@ main{
   color: var(--neutral-stat-headings);
 }
 
-@media (min-width:900px){
+@media (min-width:1100px){
   .card{
     display: flex;
     max-width: 1493px;
@@ -124,6 +121,12 @@ main{
 
   .card__metric-wrapper{
     grid-auto-flow: column;
+  }
+
+  .card__img img{
+    max-width: none;
+    object-fit: cover;  
+    height: 100%;
   }
 }
 
