@@ -44,16 +44,14 @@ main{
 
 .card__img{
   background-color: var(--primary-accent);
-  /* object-fit: fill; */
 }
 
-.card__img picture img{
-  opacity: .8;
+.card__img img{
+  max-width: none;
+  object-fit: cover;  
+  height: 100%;
   mix-blend-mode: multiply;
-  object-fit: cover;
-  /* height: 100%; */
-  /* width: inherit;
-  height: inherit; */
+  opacity: .8;
 }
 
 .card__content{
@@ -101,7 +99,7 @@ main{
 @media (min-width:900px){
   .card{
     display: flex;
-    max-width: none;
+    max-width: 1493px;
     text-align: left;
   }
   .card__img{
